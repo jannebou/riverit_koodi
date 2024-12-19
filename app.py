@@ -19,32 +19,39 @@ def main():
     # haetaan postit rajapinnasta ja muutetaan json muotoon
     data = json.loads(r.get(URL).text)
     
+    # käydään posteja läpi
     for i in data:
         id = i["userId"]
         body = i["body"]
 
+        # tehdään uusi käyttäjä jos ei ole olemassa
         if id not in users:
             users.update(add_user(id))
 
+        # lasketaan tiedot
         users[id]["postien_lkm"] += 1
         users[id]["sanojen_yht_lkm"] += word_count(body)
         users[id]["sanojen_keskiarvo"] = users[id]["sanojen_yht_lkm"] / users[id]["postien_lkm"]
 
+        # lasketaan montako kertaa sana toistuu
         for sana in clean_text(body).split(" "): 
             if sana in users[id]["top_5_sanat"]:
                 users[id]["top_5_sanat"][sana] += 1
             else:
                 users[id]["top_5_sanat"].update({sana : 1})
-                
+
     # sorttaa top 5 sanat
     for id in users:
         users[id]["top_5_sanat"] = dict(sorted(users[id]["top_5_sanat"].items(), key = lambda item : item[1], reverse = True)[:5])
     
+    # tallennetaan tiedot
     save_dict(users)
  
 def save_dict(dict : dict):
     """
     tallentaa tiedot json-muodossa
+
+    pääavaimena toimii käyttäjä ID, jonka sisältä löytyy muut tiedot
     """
     with open("users.json", "w") as f:
         json.dump(dict, f, indent = 4)
@@ -70,7 +77,6 @@ def add_user(id : int) -> dict:
     """
     tekee uuden käyttäjän tiedot
     """
-
     return {
         id : {
             "postien_lkm" : 0,
