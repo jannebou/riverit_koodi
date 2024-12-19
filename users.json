@@ -1,0 +1,122 @@
+{
+    "1": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 254,
+        "sanojen_keskiarvo": 25.4,
+        "top_5_sanat": {
+            "et": 10,
+            "aut": 9,
+            "ut": 8,
+            "quis": 7,
+            "qui": 6
+        }
+    },
+    "2": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 240,
+        "sanojen_keskiarvo": 24.0,
+        "top_5_sanat": {
+            "qui": 8,
+            "aut": 8,
+            "et": 7,
+            "voluptas": 7,
+            "sit": 5
+        }
+    },
+    "3": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 229,
+        "sanojen_keskiarvo": 22.9,
+        "top_5_sanat": {
+            "et": 9,
+            "sed": 8,
+            "aut": 6,
+            "omnis": 6,
+            "non": 5
+        }
+    },
+    "4": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 277,
+        "sanojen_keskiarvo": 27.7,
+        "top_5_sanat": {
+            "et": 10,
+            "voluptatem": 10,
+            "aut": 9,
+            "qui": 8,
+            "in": 8
+        }
+    },
+    "5": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 237,
+        "sanojen_keskiarvo": 23.7,
+        "top_5_sanat": {
+            "et": 14,
+            "est": 7,
+            "ut": 6,
+            "voluptatem": 5,
+            "aut": 5
+        }
+    },
+    "6": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 221,
+        "sanojen_keskiarvo": 22.1,
+        "top_5_sanat": {
+            "et": 15,
+            "ut": 7,
+            "sunt": 5,
+            "est": 5,
+            "rerum": 5
+        }
+    },
+    "7": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 234,
+        "sanojen_keskiarvo": 23.4,
+        "top_5_sanat": {
+            "et": 9,
+            "molestiae": 6,
+            "asperiores": 6,
+            "qui": 5,
+            "sint": 5
+        }
+    },
+    "8": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 238,
+        "sanojen_keskiarvo": 23.8,
+        "top_5_sanat": {
+            "et": 18,
+            "qui": 9,
+            "aut": 8,
+            "dolorem": 5,
+            "quia": 5
+        }
+    },
+    "9": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 223,
+        "sanojen_keskiarvo": 22.3,
+        "top_5_sanat": {
+            "et": 9,
+            "qui": 7,
+            "ut": 7,
+            "est": 6,
+            "consequatur": 6
+        }
+    },
+    "10": {
+        "postien_lkm": 10,
+        "sanojen_yht_lkm": 232,
+        "sanojen_keskiarvo": 23.2,
+        "top_5_sanat": {
+            "et": 9,
+            "aut": 7,
+            "qui": 7,
+            "dicta": 5,
+            "est": 5
+        }
+    }
+}
